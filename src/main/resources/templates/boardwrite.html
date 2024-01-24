@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 작성폼</title>
+</head>
+<style>
+    .layout{
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .layout input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .layout textarea{
+        width: 100%;
+        margin-top: 10px;
+        max-height: 300px;
+    }
+
+    .block {
+        height: 10px;
+    }
+</style>
+<body>
+    <div class="layout">
+        <form action="/board/writepro" method="post">
+            <input type="text" name="id" placeholder="id입력(숫자 4글자)">
+            <div class="block"></div>
+            <input type="text" name="name" placeholder="이름입력">
+            <textarea name="content"></textarea>
+            <button type="submit">작성</button>
+    </div>
+</body>
+</html>
